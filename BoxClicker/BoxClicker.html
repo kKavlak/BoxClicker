@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Clicker!</title>
+    <script src="./BoxScript.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron&display=swap');
+        
+        #intro{
+            display: none;
+            color: white;
+        }
+       #top{
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        #scores{
+            text-align: center;
+        }
+        #top tr td{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        #mid{
+            margin: auto;
+        }
+        #hs{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 30px;
+            color: black
+        }
+        #sc{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 60px;
+            color: green;
+        }
+        #cd{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 30px;
+            color: red;
+        }
+        #mid div{
+            border: 1px solid black;
+            width: 60px;
+            height: 60px;
+        }
+        #time{
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        #time tr td{
+            display: flex;
+        }
+        #tleft{
+            background-color: cornflowerblue;
+            width: 400px;
+            height: 10px;
+        }
+        #tspent{
+            background-color: darkblue;
+            height: 10px;
+            width: 0px;
+        }
+        #message{
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: white;
+        }
+        td span{
+            color: white;
+            font-size: 6px;
+        }
+        #myname{
+            position: absolute;
+            bottom: 0px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: right;
+            font-size: 7px
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="intro">3</h1>
+    <table id="top">
+        <tr>
+            <td style="font-family: 'Josefin Sans', sans-serif;">HI-SCORE</td>
+            <td style="font-family: 'Josefin Sans', sans-serif;">SCORE</td>
+            <td style="font-family: 'Josefin Sans', sans-serif;">TIME </td>
+        </tr>
+        <tr id="scores">
+            <td id="hs">0</td>
+            <td id="sc">0</td>
+            <td id="cd">10</td>
+        </tr>
+    </table>
+    
+    <table id="mid">
+        <tr>
+            <td><div id="box1"></div></td>
+            <td><div id="box2"></div></td>
+            <td><div id="box3"></div></td>
+            <td><div id="box4"></div></td>
+        </tr>
+        <tr>
+            <td><div id="box5"></div></td>
+            <td><div id="box6"></div></td>
+            <td><div id="box7"></div></td>
+            <td><div id="box8"></div></td> 
+        </tr>
+        <tr>
+            <td><div id="box9"></div></td>
+            <td><div id="box10"></div></td>
+            <td><div id="box11"></div></td>
+            <td><div id="box12"></div></td>
+        </tr>
+        <tr>
+            <td><div id="box13"></div></td>
+            <td><div id="box14"></div></td>
+            <td><div id="box15"></div></td>
+            <td><div id="box16"></div></td>
+        </tr>
+    </table>
+
+    <table id="time">
+        <tr>
+            <td>
+                <div id="tleft"></div>
+                <div id="tspent"></div>
+            </td>
+        </tr>
+    </table>
+
+    <div id="message">F5 to play again</div>
+
+    <div id="myname">Kayra Kavlak 2021</div>
+</body>
+</html>  
